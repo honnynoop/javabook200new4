@@ -69,22 +69,22 @@ public class CardCase {
 		}
 	});
 }
- // sort를 rambda로 구현
- public void rambdasort(){
+ // sort를 lambda로 구현
+ public void lambdasort(){
 	cards.sort((c1, c2) ->{return c1.getCardVal().compareTo(c2.getCardVal());});
  }
- public void rambdasort2(){
+ public void lambdasort2(){
 	cards.sort(Comparator.comparing(Card::getCardVal)); // comparing
  }
- public void rambdasort3(){
+ public void lambdasort3(){
 	cards.sort(Card::compareCard);  // static 
  }
- // rsort를 rambda로 구현
- public void rambdarsort(){
+ // rsort를 lambda로 구현
+ public void lambdarsort(){
 	cards.sort(
 	(c1, c2) ->{return - c1.getCardVal().compareTo(c2.getCardVal());});
  }
- public void rambdarsort2(){
+ public void lambdarsort2(){
 	Comparator<Card> mycard = (c1, c2) ->{return c1.getCardVal().compareTo(c2.getCardVal());};
 	cards.sort( mycard.reversed() );
  }

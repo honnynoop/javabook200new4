@@ -17,10 +17,10 @@ public class CardCaseMain {
 		cc.rsort();
 		cc.print();
 		System.out.println("--------------------------");
-		cc.rambdasort3();
+		cc.lambdasort3();
 		cc.print();
 		System.out.println("--------------------------");
-		cc.rambdarsort3();
+		cc.lambdarsort3();
 		cc.print();
 	}
 }
